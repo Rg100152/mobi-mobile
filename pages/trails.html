@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse and search curated hiking trails with Mobi Mobile." />
+  <title>Trails — Mobi Mobile</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Trails</h1>
+        <p>Search by name or difficulty and find your next route.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="trail-toolbar">
+          <div class="search-box">
+            <input
+              type="search"
+              id="trail-search"
+              placeholder="Search trails or difficulty (easy, moderate, hard)..."
+              aria-label="Search trails"
+            />
+          </div>
+        </div>
+
+        <div class="trails-grid">
+          <article class="trail-card" data-name="Summit Ridge" data-difficulty="hard">
+            <img src="../images/hero.png" alt="Summit Ridge trail" loading="lazy" />
+            <div class="trail-card-body">
+              <h3>Summit Ridge</h3>
+              <div class="trail-meta">
+                <span>12.4 km &middot; 6h</span>
+                <span class="trail-tag">Hard</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="trail-card" data-name="Valley Loop" data-difficulty="easy">
+            <img src="../images/hero1.png" alt="Valley Loop trail" loading="lazy" />
+            <div class="trail-card-body">
+              <h3>Valley Loop</h3>
+              <div class="trail-meta">
+                <span>4.2 km &middot; 1.5h</span>
+                <span class="trail-tag">Easy</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="trail-card" data-name="Pine Forest Path" data-difficulty="easy">
+            <img src="../images/hero2.png" alt="Pine Forest Path trail" loading="lazy" />
+            <div class="trail-card-body">
+              <h3>Pine Forest Path</h3>
+              <div class="trail-meta">
+                <span>3.1 km &middot; 1h</span>
+                <span class="trail-tag">Easy</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="trail-card" data-name="Ridge Line" data-difficulty="moderate">
+            <img src="../images/hero3.png" alt="Ridge Line trail" loading="lazy" />
+            <div class="trail-card-body">
+              <h3>Ridge Line</h3>
+              <div class="trail-meta">
+                <span>8.6 km &middot; 4h</span>
+                <span class="trail-tag">Moderate</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="trail-card" data-name="Lakeside Camp" data-difficulty="moderate">
+            <img src="../images/hero4.png" alt="Lakeside Camp trail" loading="lazy" />
+            <div class="trail-card-body">
+              <h3>Lakeside Camp</h3>
+              <div class="trail-meta">
+                <span>6.8 km &middot; 3h</span>
+                <span class="trail-tag">Moderate</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="trail-card" data-name="Granite Pass" data-difficulty="hard">
+            <img src="../images/pasted-5.png" alt="Granite Pass trail" loading="lazy" />
+            <div class="trail-card-body">
+              <h3>Granite Pass</h3>
+              <div class="trail-meta">
+                <span>15.2 km &middot; 7h</span>
+                <span class="trail-tag">Hard</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="empty-state" id="no-results">No trails match your search. Try another keyword.</p>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>

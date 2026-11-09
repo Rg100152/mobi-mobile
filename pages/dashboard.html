@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Your Mobi Mobile dashboard." />
+  <title>Dashboard — Mobi Mobile</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <main>
+    <section class="page-hero" id="dashboard">
+      <div class="container">
+        <h1>Hi, <span id="dashboard-name">Explorer</span></h1>
+        <p>Welcome back. Here is a quick look at your account.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="dashboard-grid">
+          <div class="dash-card">
+            <h3>Your Account</h3>
+            <p><strong>Email:</strong> <span id="dashboard-email">—</span></p>
+            <p><strong>Member since:</strong> <span id="dashboard-joined">—</span></p>
+          </div>
+
+          <div class="dash-card">
+            <h3>Find a Trail</h3>
+            <p>Browse curated routes and filter by difficulty.</p>
+            <a href="trails.html" class="btn-primary">Explore Trails</a>
+          </div>
+
+          <div class="dash-card">
+            <h3>Share a Review</h3>
+            <p>Tell the community about your latest adventure.</p>
+            <a href="write-review.html" class="btn-outline">Write Review</a>
+          </div>
+        </div>
+
+        <div style="margin-top: 32px;">
+          <button class="btn-outline" id="logout-btn">Log Out</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/auth.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>
