@@ -1,4 +1,5 @@
 # Mobi Mobile
+https://rg100152.github.io/mobi-mobile/
 
 A bold, adventurous travel and exploration website built with static HTML, CSS and vanilla JavaScript.
 
